@@ -2,7 +2,7 @@
 
 from rest_framework import viewsets, permissions
 from ..models import ExpenseIncome
-from ..serializers import ExpenseIncomeSerializer
+from ..serializers.tracker_serializers import ExpenseIncomeSerializer
 
 class IsOwnerOrAdmin(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
