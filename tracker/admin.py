@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import ExpenseIncome
 
+# Register your models here.
+
 @admin.register(ExpenseIncome)
 class ExpenseIncomeAdmin(admin.ModelAdmin):
     list_display = ['id', 'user', 'title', 'amount', 'transaction_type', 'tax_type', 'total', 'created_at']

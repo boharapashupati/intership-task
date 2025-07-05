@@ -63,13 +63,16 @@ Install dependencies:
 #### Example ExpenseIncome Model
 ```json
 {
-  "user": 1,
-  "title": "Salary",
-  "description": "Monthly salary",
-  "amount": 1000.00,
-  "transaction_type": "credit", // or "debit"
-  "tax": 10.00,
-  "tax_type": "flat" // or "percentage"
+           "id": 1,
+            "title": "Grocery Shopping",
+            "description": "Weekly groceries",
+            "amount": "100.00",
+            "transaction_type": "debit",
+            "tax": "10.00",
+            "tax_type": "flat",
+            "created_at": "2025-07-05T02:23:00.031129Z",
+            "updated_at": "2025-07-05T02:23:00.031431Z",
+            "user": 1
 }
 ```
 - **total**: Calculated as `amount + tax` (flat) or `amount + (amount * tax / 100)` (percentage)
